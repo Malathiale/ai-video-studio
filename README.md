@@ -137,3 +137,21 @@ The project demonstrates integration of a hosted AI image-to-video model with a 
 ---
 
 **Developed as a personal AI application project.**
+
+
+---
+
+## 📸 Application Screenshots
+
+### 1. Main Studio
+![AI Video Studio](screenshots/studio.png)
+
+### 2. Image Upload
+![Image Upload](screenshots/upload-section.png)
+
+### 3. Generated Video
+![Generated Video](screenshots/generated-video.png)
+
+### 4. My Creations Gallery
+![Video Gallery](screenshots/gallery.png)
+
