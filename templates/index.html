@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video Studio</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="/" class="logo">AI<span>STUDIO</span></a>
+
+        <nav>
+            <a href="#studio">Studio</a>
+            <a href="#gallery">My Creations</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <span class="model-tag">POWERED BY WAN 2.2</span>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <p class="eyebrow">YOUR CREATIVE AI WORKSPACE</p>
+
+            <h1>
+                Bring your images<br>
+                to <span>life.</span>
+            </h1>
+
+            <p class="hero-text">
+                Turn a single image into a cinematic video
+                with the power of AI.
+            </p>
+        </section>
+
+        <!-- VIDEO STUDIO -->
+        <section class="studio" id="studio">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">CREATE SOMETHING AMAZING</p>
+                    <h2>Video Studio</h2>
+                </div>
+
+                <span class="model-tag">WAN 2.2 I2V</span>
+            </div>
+
+            <div class="workspace">
+
+                <!-- IMAGE AND PROMPTS -->
+                <div class="panel">
+
+                    <label>01 — SOURCE IMAGE</label>
+
+                    <input
+                        type="file"
+                        id="imageUpload"
+                        accept="image/png,image/jpeg,image/webp"
+                    >
+
+                    <div id="imagePreview" class="preview">
+                        <span>Upload your image</span>
+                        <small>PNG, JPG or WEBP</small>
+                    </div>
+
+                    <label for="prompt">02 — PROMPT</label>
+
+                    <textarea
+                        id="prompt"
+                        placeholder="Describe the movement you want in your video..."
+                    ></textarea>
+
+                    <label for="negativePrompt">
+                        03 — NEGATIVE PROMPT
+                    </label>
+
+                    <textarea
+                        id="negativePrompt"
+                        placeholder="blurry, flickering, jitter, distorted face, extra fingers, warped anatomy, text, watermark"
+                    ></textarea>
+
+                </div>
+
+                <!-- SETTINGS -->
+                <div class="panel settings">
+
+                    <label>04 — VIDEO SETTINGS</label>
+
+                    <label for="duration">Duration</label>
+
+                    <select id="duration">
+                        <option value="3">3 seconds</option>
+                        <option value="4">4 seconds</option>
+                        <option value="5" selected>5 seconds</option>
+                    </select>
+
+                    <label for="resolution">Video Resolution</label>
+
+                    <select id="resolution">
+                        <option value="480p" selected>480p — Standard</option>
+                        <option value="720p">720p — HD</option>
+                        <option value="1080p">1080p — Full HD</option>
+                        <option value="4k">4K — Ultra HD</option>
+                    </select>
+
+                    <label for="steps">Generation Steps</label>
+
+                    <input
+                        type="number"
+                        id="steps"
+                        min="4"
+                        max="8"
+                        value="8"
+                    >
+
+                    <label for="quality">Export Quality</label>
+
+                    <input
+                        type="number"
+                        id="quality"
+                        min="1"
+                        max="10"
+                        value="8"
+                    >
+
+                    <label for="seed">Seed</label>
+
+                    <input
+                        type="number"
+                        id="seed"
+                        value="42"
+                    >
+
+                    <button id="generateBtn">
+                        Generate Video ↗
+                    </button>
+
+                    <p class="note">
+                        Your creation will appear here after generation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- VIDEO GALLERY -->
+        <section class="studio" id="gallery">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">YOUR VIDEO COLLECTION</p>
+                    <h2>My Creations</h2>
+                </div>
+
+                <span class="model-tag">VIDEO GALLERY</span>
+            </div>
+
+            <div class="panel gallery-panel">
+
+                <div id="videoGallery" class="video-gallery">
+
+                    <div class="gallery-empty">
+                        <h3>Your gallery is waiting</h3>
+
+                        <p>
+                            Generate your first video and it will appear here.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="about">
+            <p>AI VIDEO STUDIO · Powered by Wan 2.2</p>
+        </footer>
+
+    </main>
+
+    <script src="/static/script.js"></script>
+
+</body>
+</html>
